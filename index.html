@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Home page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script >
+  	$(document).ready(function(){
+  	$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    responsive:{
+		        0:{
+		        	stagePadding: 50,
+		            items:1
+		        },
+		        768:{
+		        	nav:true,
+		            items:3
+		        },
+		        940:{
+		        	nav:true,
+		            items:3
+		        }
+		    }
+		})
+
+  	var owl = $('.owl-carousel');
+	owl.owlCarousel();
+	// Go to the next item
+	$('.owl-next').click(function() {
+	    owl.trigger('next.owl.carousel');
+	})
+	// Go to the previous item
+	$('.owl-prev').click(function() {
+	    // With optional speed parameter
+	    // Parameters has to be in square bracket '[]'
+	    owl.trigger('prev.owl.carousel', [300]);
+	})
+	});
+  </script>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <style type="text/css">
+  	
+  </style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		  
+		      	<p class="navbar-text"><img src="img/logo.jpg" alt="" >Công ty cổ phần liên kết Nội Bài</p>
+		      </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Trang chủ</a></li>
+		        <li><a href="#">Giới thiệu</a></li>
+		        <li><a href="#">Bảng giá</a></li>
+		        <li><a href="#">Dịch vụ</a></li>
+		        <li><a href="#">Đặt xe online</a></li>
+		        <li><a href="#">Liên hệ</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+</nav>
+	</header>
+	<section>
+		<div class="container-fluid bg-1">
+			<div class="intro">
+				<div class="slide-header">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="img/banner.jpg" alt="...">
+					      <div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      <img src="img/banner1.jpg" alt="...">
+					      <div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      <img src="img/banner2.jpg" alt="...">
+					      <div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      <img src="img/banner3.jpg" alt="...">
+					      <div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      <img src="img/banner4.jpg" alt="...">
+					      <div class="carousel-caption"></div>
+					    </div>
+					  </div>
+					  
+					</div>
+				</div>
+				<div class="container">
+					<div class="order-box">
+						<div class="title-box">
+							<h1>Đặt xe giá rẻ</h1>
+							<p>Hãy nhập thông tin của bạn chúng tôi sẽ liên hệ sớm nhất.</p>
+						</div>
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="fullName" class="col-md-3 col-sm-2 control-label info-input">Họ tên</label>
+								<div class="col-md-9 col-sm-10">
+									<input class="form-control" type="name" name="fullName" placeholder="Nhập họ tên">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="phoneNumber" class="col-md-3 col-sm-2 control-label info-input">Điện thoại</label>
+								<div class="col-md-9 col-sm-10">
+									<input class="form-control" type="name" name="phoneNumber" placeholder="Nhập số điện thoại">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="carLine" class="col-md-3 col-sm-2 control-label info-input">Dòng xe</label>
+								<div class="col-md-9 col-sm-10">
+									<input class="form-control" type="name" name="carLine" placeholder="4 chỗ, 16 chỗ..">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="orderDate" class="col-md-3 col-sm-2 control-label info-input">Ngày đặt</label>
+								<div class="col-md-9 col-sm-10">
+									<input class="form-control date-input" type="date" name="orderDate" placeholder="Chọn ngày đặt">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<button type="submit" class="btn btn-primary">Đặt Xe</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-2">
+			<div class="container">
+				<div class="col-md-4 col-sm-4 col-xs-4 left-content">
+					<div class="col-md-4 col-sm-4 img-bg2">
+						<img src="img/img1.png" alt="">
+					</div>
+					<div class="col-md-8 col-sm-8 service">
+						<div class="title-news"><p>Cam kết giá rẻ nhất</p></div>
+						<div class="content-news">Chúng tôi cam kết 100% giá của chúng tôi là thấp nhất...</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4  middle-content">
+					<div class="col-md-4 col-sm-4 img-bg2">
+						<img src="img/img2.png" alt="">
+
+					</div>
+					<div class="col-md-8 col-sm-8 service">
+						<div class="title-news"><p>Cam kết chất lượng</p></div>
+						<div class="content-news">Luôn có xe nếu đặt trước. Bồi thường nếu đón muộn</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4  right-content">
+					<div class="col-md-4 col-sm-4 img-bg2">
+						<img src="img/img3.png" alt="">
+
+					</div>
+					<div class="col-md-8 col-sm-8 service">
+						<div class="title-news"><p>Chăm sóc 24/7</p></div>
+						<div class="content-news">Bất cứ thời gian nào. Chúng tôi sẵn lòng được phục vụ các bạn.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-3">
+			<div class="container">
+			<div class="title-bg">
+				<p>Các dòng xe</p>
+			</div>
+				<div class="owl-carousel content-bg-3">
+				  	<div class="item">
+				  		<a href="#" class="left-content">
+						<div class="img-content"><img src="img/car1.jpg" alt=""></div>
+						<p>THE AVENTADOR S COUPÉ. CERTAIN ICONS ARE NEVER REINVENTED. THEY ARE REVITALIZED.</p>
+						</a>
+				  	</div>
+				  	<div class="item">
+				  		<a href="#" class=" left-content">
+						<div class="img-content"><img src="img/car1.jpg" alt=""></div>
+						<p>THE AVENTADOR S COUPÉ. CERTAIN ICONS ARE NEVER REINVENTED. THEY ARE REVITALIZED.</p>
+						</a>
+				  	</div>
+				  	<div class="item">
+				  		<a href="#" class=" left-content">
+						<div class="img-content"><img src="img/car1.jpg" alt=""></div>
+						<p>THE AVENTADOR S COUPÉ. CERTAIN ICONS ARE NEVER REINVENTED. THEY ARE REVITALIZED.</p>
+						</a>
+				  	</div>
+
+				  	
+				</div>
+				<div class="owl-controls">
+			        <div class="owl-nav">
+			            <div class="owl-prev"><img src="img/prev.png" alt=""></div>
+			            <div class="owl-next"><img src="img/next.png" alt=""></div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="container-fluid bg-4">
+			<div class="container">
+				<div class="col-md-12 title-bg"><p>Tin tức - sự kiện</p></div>
+				<div class="col-md-12 content-bg-4">
+					<div class="col-md-4 col-sm-4 left-content">
+						<div class="img-bg4"><img src="img/news1.jpg" alt=""></div>
+						<div class="title-news"><p>Say lòng trước sắc màu thiên nhiên của Ninh Bình</p></div>
+						<div class="content-news">Ninh Bình nằm ở vùng giao thoa giữa các khu vực: Tây Bắc, đồng bằng sông Hồng và Bắc Trung Bộ. Đặc điểm đó đã tạo ra một nền văn hóa Ninh Bình tương đối năng động, phát triển trên nền tảng văn minh...</div>
+					</div>
+					<div class="col-md-4 col-sm-4 middle-content mobile-news">
+						<div class="img-bg4"><img src="img/news1.jpg" alt=""></div>
+						<div class="title-news"><p>Đắm mình chiều hoàng hôn nơi biển xa</p></div>
+						<div class="content-news">Những ai từng đặt chân lên thành phố biển Nha Trang, đắm mình trong làn nước biển xanh ngắt. Dưới ánh nắng mặt trời nhiệt đới, màu xanh của những triền núi ...</div>
+					</div>
+					<div class="col-md-4 col-sm-4 right-content mobile-news">
+						<div class="img-bg4"><img src="img/news1.jpg" alt=""></div>
+						<div class="title-news"><p>Say đắm lòng người với vẻ đẹp của mẹ thiên nhiên</p></div>
+						<div class="content-news">Thung lũng này nổi tiếng những hồ nước nhỏ nằm rải rác dưới chân núi, được hình thành từ các dòng suối và thác nước đổ xuống...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p class="name">© 2017 - Công ty cổ phần thương mại và dịch vụ Đặt Xe Nội Bài</p>
+			<p class="address">Địa chỉ: Tầng 3, Tháp B, Tòa Nhà Hà Thành Plaza, 102 Thái Thịnh, Đống Đa, Hà Nội</p>
+		</div>
+	</footer>
+</body>
+</html>
